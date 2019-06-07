@@ -1,11 +1,16 @@
 // Home Content
 
 .top-img {
+  display: block;
+  margin: 0 auto;
+  // padding:0 0 0 -800px;
   // display: flex;
-  flex-wrap: wrap; 
-  width: 100%;
+  // flex-wrap: wrap; 
+  max-width: 800px;
+  min-width: 300px;
   height: auto;
-  max-width: 600px;
+  // height: auto;
+  // max-width: 600px;
   // margin: auto;
   // position: absolute;
   // margin: auto;
@@ -16,6 +21,9 @@
   @media @mobile {
     width: 500px;
     order: 3;
+  }
+  .banner {
+    width: 100%;
   }
 }
 
@@ -169,7 +177,7 @@
                       .btn {
                         
                         button {
-                          // border-radius: 3px;
+                          border-radius: 3px;
                           // .border-radius(3px) {
 
                           // }                         .text-decoration(@none)
@@ -193,8 +201,8 @@
                         
                         }
                         button:hover {
-                          // text-decoration: none;
-                          .text-decoration(@none);
+                          text-decoration: none;
+                          // .text-decoration(@none);
                           color: @btn-bg-color;
                           background-color: @main-font-color;
                       }

@@ -160,6 +160,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top {
+  background-color: #F1F1F1;
+}
 nav {
   width: 100%;
   display: block;
@@ -245,16 +248,20 @@ footer {
   align-items: center;
 }
 .top-img {
-  flex-wrap: wrap;
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 300px;
   height: auto;
-  max-width: 600px;
 }
 @media ( max-width: 500px ) {
   .top-img {
     width: 500px;
     order: 3;
   }
+}
+.top-img .banner {
+  width: 100%;
 }
 .box {
   padding: 0 30px 0 30px;
@@ -362,6 +369,7 @@ footer {
   border-radius: 3px;
   color: #F6F7F8;
   background-color: #22283A;
+  max-width: 500px;
   justify-content: flex-start;
   width: 20%;
   display: inline-block;
