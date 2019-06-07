@@ -1,3 +1,28 @@
+.btn-class {
+  border-radius: 3px;
+  color: #F6F7F8;
+  background-color: #22283A;
+  max-width: 500px;
+  justify-content: flex-start;
+  width: 20%;
+  display: inline-block;
+  height: 2.3rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+.btn-class:hover {
+  text-decoration: none;
+  color: #22283A;
+  background-color: #5E6164;
+}
+@media ( max-width: 500px ) {
+  .btn-class {
+    width: 720%;
+    height: 5rem;
+    justify-content: center;
+    order: 100;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -376,36 +401,6 @@ footer {
     justify-content: flex-start;
   }
 }
-.home .walk-img .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home .walk-img .btn button {
-  border-radius: 3px;
-  color: #F6F7F8;
-  background-color: #22283A;
-  max-width: 500px;
-  justify-content: flex-start;
-  width: 20%;
-  display: inline-block;
-  height: 2.3rem;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-}
-@media ( max-width: 500px ) {
-  .home .walk-img .btn button {
-    width: 720%;
-    height: 5rem;
-    justify-content: center;
-    order: 100;
-  }
-}
-.home .walk-img .btn button:hover {
-  text-decoration: none;
-  color: #22283A;
-  background-color: #5E6164;
-}
 .home .walk-img img {
   width: 100%;
   height: auto;
@@ -418,5 +413,30 @@ footer {
     flex-wrap: wrap;
     width: 100%;
     order: 98;
+  }
+}
+.button {
+  border-radius: 3px;
+  color: #F6F7F8;
+  background-color: #22283A;
+  max-width: 500px;
+  justify-content: flex-start;
+  width: 20%;
+  display: inline-block;
+  height: 2.3rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+.button:hover {
+  text-decoration: none;
+  color: #22283A;
+  background-color: #5E6164;
+}
+@media ( max-width: 500px ) {
+  .button {
+    width: 720%;
+    height: 5rem;
+    justify-content: center;
+    order: 100;
   }
 }

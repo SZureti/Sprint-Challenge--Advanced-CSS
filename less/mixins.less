@@ -40,3 +40,31 @@
 //     button-text-decoration: @none;
 //     text-decoration: @none;
 // }
+
+//Button
+
+.btn-class {
+    border-radius: 3px;
+    color: @porcelain;
+    background-color: @btn-bg-color;
+    max-width: 500px;
+    justify-content: flex-start;
+    width: 20%;
+    display: inline-block;
+    height: 2.3rem;
+    font-family: @main-font;
+    text-align: center;
+    
+    &:hover {
+        text-decoration: none;
+        color: @btn-bg-color;
+        background-color: @main-font-color;
+    }
+     @media @mobile {
+        width: 720%;
+        height: 5rem;
+        justify-content: center;
+        order: 100;
+    }
+ }
+
