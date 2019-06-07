@@ -1,1 +1,28 @@
 // Mixins Here
+
+.center (){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-button(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//Parametric Animation 
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
